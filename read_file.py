@@ -127,13 +127,6 @@ def load_csv(df, filename, time=10):
 
     df1.to_csv(filename)
 
-def deg2rad(input):
-    output = []
-    for deg in tqdm.tqdm(input):
-        rad = deg * np.pi / 180
-        output = output + [rad]
-    return output
-
 def u(ws, wd):
     return -ws * np.cos(wd)
 
